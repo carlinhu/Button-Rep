@@ -3,6 +3,8 @@
 <head>
     <title>A Button</title>
     <link rel = "shortcut icon" type="image/png" href="img/favicon.png">
+    <audio id="buttonSfx"><source src = "audio/ButtonSfx.mp3" type="audio/mpeg"></audio>
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +12,13 @@
     
 </head>
 <body>
-    <button  class = "button" >Press me for nothing.</button>
-    
+    <button  class = "button" onclick="Sfx()">Press me for nothing.</button>
+    <script>
+        var audio = document.getElementById("buttonSfx");
+        function Sfx()
+        {
+            audio.play();
+        }
+    </script>
 </body>
 </html>
