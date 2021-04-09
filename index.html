@@ -4,6 +4,7 @@
     <title>A Button</title>
     <link rel = "shortcut icon" type="image/png" href="img/favicon.png">
     <audio id="buttonSfx"><source src = "audio/ButtonSfx.mp3" type="audio/mpeg"></audio>
+    <audio id="susSfx"><source src = "audio/Sus.mp3" type="audio/mpeg"></audio>
 
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -20,5 +21,14 @@
             audio.play();
         }
     </script>
+
+    <button  class = "susButton" onclick="SfxSus()">.</button>
+    <script>
+    var audio = document.getElementById("susSfx");
+    function SfxSus()
+    {
+        audio.play();
+    }
+</script>
 </body>
 </html>
