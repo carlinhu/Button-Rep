@@ -3,6 +3,7 @@ body{
 }
 
 .button {
+    transition: ease-out 0.3s;
     background-color: #2f5fff;
     text-align: center;
     font-size: 25px;
@@ -10,10 +11,12 @@ body{
     border: none;
     cursor: pointer;
     outline: none;
-
+    box-shadow: inset 0 0 0 0 #6783ff;
+    
     position: fixed;
-    bottom: 50%;
+    bottom: calc(50% - 27px);
     width: 30%;
+    height: 55px;
     left: 35%;
     padding: 10px 0px;
 
@@ -21,7 +24,12 @@ body{
 }
 
 .button:hover{
+    transition: 0.5s all ease;
     background-color: #6783ff;
+    bottom: calc(50% - 31px);
+    width: 31%;
+    height: 62px;
+    left: 34.5%;
 }
 
 .button:active{
